@@ -1,0 +1,2 @@
+# polymath
+A mathematics library
