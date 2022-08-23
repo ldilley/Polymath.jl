@@ -24,21 +24,10 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-module Polymath
+module Temperature
 
-include("Geometry.jl")
+celsius(degrees_fahrenheit) = (5 / 9) * (degrees_fahrenheit - 32)
 
-using .Geometry: PI, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
-                 area_rectangle, area_square, area_trapezoid, area_triangle, perimeter_rectangle,
-                 perimeter_square
-
-export PI, circumference, diameter, radius, area_circle, area_cube, area_ellipse, area_rectangle,
-       area_square, area_trapezoid, area_triangle, perimeter_rectangle, perimeter_square
-
-include("Temperature.jl")
-
-using .Temperature: celsius, fahrenheit
-
-export celsius, fahrenheit
+fahrenheit(degrees_celsius) = degrees_celsius * (9 / 5) + 32
 
 end
