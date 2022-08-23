@@ -28,11 +28,15 @@ module Geometry
 
 const PI = 3.141592653589793
 
+circumference(radius) = PI * radius * 2
+
 diameter(radius) = radius * 2
 
 radius(diameter) = diameter / 2
 
 area_circle(radius) = PI * radius ^ 2
+
+area_cube(side_length) = 6 * side_length ^ 2
 
 area_ellipse(major_semiaxis, minor_semiaxis) = PI * major_semiaxis * minor_semiaxis
 
@@ -42,7 +46,7 @@ area_square(side_length) = side_length ^ 2
 
 area_trapezoid(base_length, top_length, height) = (base_length + top_length) / 2 * height
 
-area_triangle(base, height) = 0.5 * base * height
+area_triangle(base, height) = base * height * 0.5
 
 perimeter_rectangle(height, width) = (height + width) * 2
 

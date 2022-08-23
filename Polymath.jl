@@ -28,10 +28,11 @@ module Polymath
 
 include("Geometry.jl")
 
-using .Geometry: PI, diameter, radius, area_circle, area_ellipse, area_rectangle, area_square, area_trapezoid,
-                 area_triangle, perimeter_rectangle, perimeter_square
+using .Geometry: PI, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
+                 area_rectangle, area_square, area_trapezoid, area_triangle, perimeter_rectangle,
+                 perimeter_square
 
-export PI, diameter, radius, area_circle, area_ellipse, area_rectangle, area_square, area_trapezoid, area_triangle,
-       perimeter_rectangle, perimeter_square
+export PI, circumference, diameter, radius, area_circle, area_cube, area_ellipse, area_rectangle,
+       area_square, area_trapezoid, area_triangle, perimeter_rectangle, perimeter_square
 
 end
