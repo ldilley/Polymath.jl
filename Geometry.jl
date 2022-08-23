@@ -36,12 +36,16 @@ area_circle(radius) = PI * radius ^ 2
 
 area_ellipse(major_semiaxis, minor_semiaxis) = PI * major_semiaxis * minor_semiaxis
 
-area_rectangle(base, height) = base * height
+area_rectangle(height, width) = height * width
 
 area_square(side_length) = side_length ^ 2
 
 area_trapezoid(base_length, top_length, height) = (base_length + top_length) / 2 * height
 
 area_triangle(base, height) = 0.5 * base * height
+
+perimeter_rectangle(height, width) = (height + width) * 2
+
+perimeter_square(side_length) = side_length * 4
 
 end
