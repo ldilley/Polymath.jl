@@ -42,10 +42,26 @@ celsius_to_fahrenheit(degrees_celsius) = degrees_celsius * (9 / 5) + 32
 const ctof = celsius_to_fahrenheit
 
 """
+    celsius_to_kelvin(degrees_celsius)
+    ctok(degrees_celsius)
+
+Convert degrees Celsius to kelvins.
+
+# Example
+```julia-repl
+julia> ctok(32)
+305.15
+```
+"""
+celsius_to_kelvin(degrees_celsius) = degrees_celsius + 273.15
+const ctok = celsius_to_kelvin
+
+"""
     fahrenheit_to_celsius(degrees_fahrenheit)
     ftoc(degrees_fahrenheit)
 
 Convert degrees Fahrenheit to degrees Celsius.
+
 # Example
 ```julia-repl
 julia> ftoc(32)
@@ -54,5 +70,50 @@ julia> ftoc(32)
 """
 fahrenheit_to_celsius(degrees_fahrenheit) = (5 / 9) * (degrees_fahrenheit - 32)
 const ftoc = fahrenheit_to_celsius
+
+"""
+    fahrenheit_to_kelvin(degrees_fahrenheit)
+    ftok(degrees_fahrenheit)
+
+Convert degrees Fahrenheit to kelvins.
+
+# Example
+```julia-repl
+julia> ftok(50)
+283.15
+```
+"""
+fahrenheit_to_kelvin(degrees_fahrenheit) = (5 / 9) * (degrees_fahrenheit - 32) + 273.15
+const ftok = fahrenheit_to_kelvin
+
+"""
+    kelvin_to_celsius(kelvins)
+    ktoc(kelvins)
+
+Convert kelvins to degrees Celsius.
+
+# Example
+```julia-repl
+julia> ktoc(305.15)
+32.0
+```
+"""
+kelvin_to_celsius(kelvins) = kelvins - 273.15
+const ktoc = kelvin_to_celsius
+
+"""
+    kelvin_to_fahrenheit(kelvins)
+    ktof(kelvins)
+
+Convert kelvins to degrees Fahrenheit.
+
+# Example
+```julia-repl
+julia> ktof(305.15)
+89.6
+```
+"""
+kelvin_to_fahrenheit(kelvins) = (9 / 5) * (kelvins - 273.15) + 32
+const ktof = kelvin_to_fahrenheit
 
 end
