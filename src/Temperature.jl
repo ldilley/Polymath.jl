@@ -26,9 +26,32 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 module Temperature
 
+"""
+    celsius_to_fahrenheit(degrees_celsius)
+    ctof(degrees_celsius)
+
+Convert degrees Celsius to degrees Fahrenheit.
+
+# Example
+```julia-repl
+julia> ctof(32)
+89.6
+```
+"""
 celsius_to_fahrenheit(degrees_celsius) = degrees_celsius * (9 / 5) + 32
 const ctof = celsius_to_fahrenheit
 
+"""
+    fahrenheit_to_celsius(degrees_fahrenheit)
+    ftoc(degrees_fahrenheit)
+
+Convert degrees Fahrenheit to degrees Celsius.
+# Example
+```julia-repl
+julia> ftoc(32)
+0.0
+```
+"""
 fahrenheit_to_celsius(degrees_fahrenheit) = (5 / 9) * (degrees_fahrenheit - 32)
 const ftoc = fahrenheit_to_celsius
 

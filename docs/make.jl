@@ -7,7 +7,8 @@ makedocs(
   repo = "github.com/ldilley/polymath.git",
   pages = [
     "Home" => "index.md",
-    "Geometry" => "geometry.md"
+    "Geometry" => "geometry.md",
+    "Temperature" => "temperature.md"
   ]
 )
 
