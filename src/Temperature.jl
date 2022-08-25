@@ -26,8 +26,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 module Temperature
 
-celsius(degrees_fahrenheit) = (5 / 9) * (degrees_fahrenheit - 32)
+celsius_to_fahrenheit(degrees_celsius) = degrees_celsius * (9 / 5) + 32
+const ctof = celsius_to_fahrenheit
 
-fahrenheit(degrees_celsius) = degrees_celsius * (9 / 5) + 32
+fahrenheit_to_celsius(degrees_fahrenheit) = (5 / 9) * (degrees_fahrenheit - 32)
+const ftoc = fahrenheit_to_celsius
 
 end

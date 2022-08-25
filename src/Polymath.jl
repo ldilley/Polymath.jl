@@ -37,8 +37,8 @@ export PI, circumference, diameter, radius, area_circle, area_cube, area_ellipse
 
 include("Temperature.jl")
 
-using .Temperature: celsius, fahrenheit
+using .Temperature: celsius_to_fahrenheit, ctof, fahrenheit_to_celsius, ftoc
 
-export celsius, fahrenheit
+export celsius_to_fahrenheit, ctof, fahrenheit_to_celsius, ftoc
 
 end
