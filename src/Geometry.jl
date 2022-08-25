@@ -26,12 +26,54 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 module Geometry
 
+"""
+Constant representing the value of π (pi).
+
+# Example
+```julia-repl
+julia> PI
+3.141592653589793
+```
+"""
 const PI = 3.141592653589793
 
+"""
+    circumference(radius)
+
+Calculate circumference given the radius.
+
+# Example
+```julia-repl
+julia> circumference(32.50)
+204.20352248333654
+```
+"""
 circumference(radius) = PI * radius * 2
 
+"""
+    diameter(radius)
+
+Calculate diameter given the radius.
+
+# Example
+```julia-repl
+julia> diameter(17.75)
+35.5
+```
+"""
 diameter(radius) = radius * 2
 
+"""
+    radius(diameter)
+
+Calculate radius given the diameter.
+
+# Example
+```julia-repl
+julia> radius(54.25)
+27.125
+```
+"""
 radius(diameter) = diameter / 2
 
 area_circle(radius) = PI * radius ^ 2
