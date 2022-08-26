@@ -76,22 +76,121 @@ julia> radius(54.25)
 """
 radius(diameter) = diameter / 2
 
+"""
+    area_circle(radius)
+
+Calculate area of a circle given the radius.
+
+# Example
+```julia-repl
+julia> area_circle(157)
+77437.11731833481
+```
+"""
 area_circle(radius) = PI * radius ^ 2
 
+"""
+    area_cube(side_length)
+
+Calculate area of a cube given the length of a side.
+
+# Example
+```julia-repl
+julia> area_cube(42)
+10584
+```
+"""
 area_cube(side_length) = 6 * side_length ^ 2
 
+"""
+    area_ellipse(major_semiaxis, minor_semiaxis)
+
+Calculate area of an ellipse given the major and minor semiaxes.
+
+# Example
+```julia-repl
+julia> area_ellipse(50.575, 50.419)
+8010.875677067962
+```
+"""
 area_ellipse(major_semiaxis, minor_semiaxis) = PI * major_semiaxis * minor_semiaxis
 
+"""
+    area_rectangle(height, width)
+
+Calculate area of a rectangle given the height and width.
+
+# Example
+```julia-repl
+julia> area_rectangle(15.75, 20)
+315.0
+```
+"""
 area_rectangle(height, width) = height * width
 
+"""
+    area_square(side_length)
+
+Calculate area of a square given the length of a side.
+
+# Example
+```julia-repl
+julia> area_square(25.50)
+650.25
+```
+"""
 area_square(side_length) = side_length ^ 2
 
+"""
+    area_trapezoid(base_length, top_length, height)
+
+Calculate area of a trapezoid given the base length, top length, and height.
+
+# Example
+```julia-repl
+julia> area_trapezoid(30.5, 10.5, 20.75)
+425.375
+```
+"""
 area_trapezoid(base_length, top_length, height) = (base_length + top_length) / 2 * height
 
-area_triangle(base, height) = base * height * 0.5
+"""
+    area_triangle(base_length, height)
 
+Calculate area of a triangle given the base length and height.
+
+# Example
+```julia-repl
+julia> area_triangle(42.5, 32.50)
+690.625
+```
+"""
+area_triangle(base_length, height) = base * height * 0.5
+
+"""
+    perimeter_rectangle(height, width)
+
+Calculate perimeter of a rectangle given the height and width.
+
+# Example
+```julia-repl
+julia> perimeter_rectangle(25, 50)
+150
+```
+"""
 perimeter_rectangle(height, width) = (height + width) * 2
 
+"""
+    perimeter_square(side_length)
+
+Calculate perimeter of a square given the length of a side.
+
+# Example
+```julia-repl
+julia> perimeter_square(25)
+100
+```
+"""
 perimeter_square(side_length) = side_length * 4
 
 end
