@@ -228,7 +228,7 @@ Calculate vertices of a convex polyhedron given the edges and faces.
 ```julia-repl
 julia> vertices(12, 6)
 8
-````
+```
 """
 vertices(edges, faces) = edges - faces + 2
 
