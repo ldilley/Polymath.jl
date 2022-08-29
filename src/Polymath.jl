@@ -30,10 +30,11 @@ include("Geometry.jl")
 
 using .Geometry: PI, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
                  area_rectangle, area_square, area_trapezoid, area_triangle, perimeter_rectangle,
-                 perimeter_square
+                 perimeter_square, edges, faces, vertices
 
 export PI, circumference, diameter, radius, area_circle, area_cube, area_ellipse, area_rectangle,
-       area_square, area_trapezoid, area_triangle, perimeter_rectangle, perimeter_square
+       area_square, area_trapezoid, area_triangle, perimeter_rectangle, perimeter_square, edges,
+       faces, vertices
 
 include("Temperature.jl")
 

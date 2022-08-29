@@ -193,4 +193,43 @@ julia> perimeter_square(25)
 """
 perimeter_square(side_length) = side_length * 4
 
+"""
+    edges(faces, vertices)
+
+Calculate edges of a convex polyhedron given the faces and vertices.
+
+# Example
+```julia-repl
+julia> edges(6, 8)
+12
+```
+"""
+edges(faces, vertices) = faces + vertices - 2
+
+"""
+    faces(edges, vertices)
+
+Calculate faces of convex polyhedron given the edges and vertices.
+
+# Example
+```julia-repl
+julia> faces(12, 8)
+6
+```
+"""
+faces(edges, vertices) = edges - vertices + 2
+
+"""
+    vertices(edges, faces)
+
+Calculate vertices of a convex polyhedron given the edges and faces.
+
+# Example
+```julia-repl
+julia> vertices(12, 6)
+8
+````
+"""
+vertices(edges, faces) = edges - faces + 2
+
 end
