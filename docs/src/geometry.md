@@ -29,4 +29,5 @@ perimeter_square
 edges
 faces
 vertices
+has_euler_characteristic
 ```
