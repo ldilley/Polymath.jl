@@ -261,4 +261,17 @@ julia> distance_2d(25, 42, 35, 80)
 """
 distance_2d(x1, y1, x2, y2) = sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2)
 
+"""
+    distance_3d(x1, y1, z1, x2, y2, z2) = sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2 + (z2 - z1) ^ 2)
+
+Calculate distance between a pair of 3D points.
+
+# Example
+```julia-repl
+julia> distance_3d(14, 8, 5, 17, 38, 23)
+35.11409973215888
+```
+"""
+distance_3d(x1, y1, z1, x2, y2, z2) = sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2 + (z2 - z1) ^ 2)
+
 end

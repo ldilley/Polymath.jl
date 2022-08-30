@@ -31,4 +31,5 @@ faces
 vertices
 has_euler_characteristic
 distance_2d
+distance_3d
 ```
