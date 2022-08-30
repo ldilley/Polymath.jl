@@ -244,7 +244,21 @@ true
 
 julia> has_euler_characteristic(12, 7, 6) # tetrahemihexahedron
 false
+```
 """
 has_euler_characteristic(edges, faces, vertices) = vertices - edges + faces == 2
+
+"""
+    distance_2d(x1, y1, x2, y2) = sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2)
+
+Calculate distance between a pair of 2D points.
+
+# Example
+```julia-repl
+julia> distance_2d(25, 42, 35, 80)
+39.293765408777
+```
+"""
+distance_2d(x1, y1, x2, y2) = sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2)
 
 end

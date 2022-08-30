@@ -30,4 +30,5 @@ edges
 faces
 vertices
 has_euler_characteristic
+distance_2d
 ```
