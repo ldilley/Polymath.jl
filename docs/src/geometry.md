@@ -12,6 +12,11 @@ using .Geometry
 PI
 ```
 
+## Geometry Module Structures
+```@docs
+Point
+```
+
 ## Geometry Module Functions
 ```@docs
 circumference

@@ -38,6 +38,29 @@ julia> PI
 const PI = 3.141592653589793
 
 """
+    Point(x, y)
+    Point(x, y, z)
+
+Structure containing 2D or 3D coordinates.
+
+# Examples
+```julia-repl
+julia> p1 = Point(1, 2, 3)
+Point(1, 2, 3)
+
+julia> p2 = Point(4, 5, nothing)
+Point(4, 5, nothing)
+```
+"""
+struct Point
+  x
+  y
+  z
+end
+
+Point(x, y) = Point(x, y, nothing)
+
+"""
     circumference(radius)
 
 Calculate circumference given the radius.
@@ -249,29 +272,53 @@ false
 has_euler_characteristic(edges, faces, vertices) = vertices - edges + faces == 2
 
 """
-    distance_2d(x1, y1, x2, y2) = sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2)
+    distance_2d(x1, y1, x2, y2)
+    distance_2d(p1, p2)
 
-Calculate distance between a pair of 2D points.
+Calculate distance between a pair of 2D points given the coordinates.
 
-# Example
+# Examples
 ```julia-repl
 julia> distance_2d(25, 42, 35, 80)
+39.293765408777
+
+julia> p1 = Point(25, 42)
+Point(25, 42, nothing)
+
+julia> p2 = Point(35, 80)
+Point(35, 80, nothing)
+
+julia> distance_2d(p1, p2)
 39.293765408777
 ```
 """
 distance_2d(x1, y1, x2, y2) = sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2)
 
-"""
-    distance_3d(x1, y1, z1, x2, y2, z2) = sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2 + (z2 - z1) ^ 2)
+distance_2d(p1, p2) = distance_2d(p1.x, p1.y, p2.x, p2.y)
 
-Calculate distance between a pair of 3D points.
+"""
+    distance_3d(x1, y1, z1, x2, y2, z2)
+    distance_3d(p1, p2)
+
+Calculate distance between a pair of 3D points given the coordinates.
 
 # Example
 ```julia-repl
 julia> distance_3d(14, 8, 5, 17, 38, 23)
 35.11409973215888
+
+julia> p1 = Point(14, 8, 5)
+Point(14, 8, 5)
+
+julia> p2 = Point(17, 38, 23)
+Point(17, 38, 23)
+
+julia> distance_3d(p1, p2)
+35.11409973215888
 ```
 """
 distance_3d(x1, y1, z1, x2, y2, z2) = sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2 + (z2 - z1) ^ 2)
+
+distance_3d(p1, p2) = distance_3d(p1.x, p1.y, p1.z, p2.x, p2.y, p2.z)
 
 end

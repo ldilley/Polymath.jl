@@ -28,14 +28,15 @@ module Polymath
 
 include("Geometry.jl")
 
-using .Geometry: PI, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
+using .Geometry: PI, Point, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
                  area_rectangle, area_square, area_trapezoid, area_triangle, perimeter_rectangle,
                  perimeter_square, edges, faces, vertices, has_euler_characteristic, distance_2d,
                  distance_3d
 
-export PI, circumference, diameter, radius, area_circle, area_cube, area_ellipse, area_rectangle,
-       area_square, area_trapezoid, area_triangle, perimeter_rectangle, perimeter_square, edges,
-       faces, vertices, has_euler_characteristic, distance_2d, distance_3d
+export PI, Point, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
+       area_rectangle, area_square, area_trapezoid, area_triangle, perimeter_rectangle,
+       perimeter_square, edges, faces, vertices, has_euler_characteristic, distance_2d,
+       distance_3d
 
 include("Temperature.jl")
 
