@@ -1,13 +1,13 @@
 # Temperature
 
-## Documentation
+## Usage
 To use this module:
 ```
 include("Temperature.jl")
 using .Temperature
 ```
 
-## Temperature Module Functions
+## Functions
 ```@docs
 celsius_to_fahrenheit
 celsius_to_kelvin

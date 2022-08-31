@@ -48,7 +48,7 @@ Structure containing 2D or 3D coordinates.
 julia> p1 = Point(1, 2, 3)
 Point(1, 2, 3)
 
-julia> p2 = Point(4, 5, nothing)
+julia> p2 = Point(4, 5)
 Point(4, 5, nothing)
 ```
 """
@@ -302,7 +302,7 @@ distance_2d(p1, p2) = distance_2d(p1.x, p1.y, p2.x, p2.y)
 
 Calculate distance between a pair of 3D points given the coordinates.
 
-# Example
+# Examples
 ```julia-repl
 julia> distance_3d(14, 8, 5, 17, 38, 23)
 35.11409973215888

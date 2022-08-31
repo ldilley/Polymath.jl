@@ -1,23 +1,23 @@
 # Geometry
 
-## Documentation
+## Usage
 To use this module:
 ```
 include("Geometry.jl")
 using .Geometry
 ```
 
-## Geometry Module Constants
+## Constants
 ```@docs
 PI
 ```
 
-## Geometry Module Structures
+## Types
 ```@docs
 Point
 ```
 
-## Geometry Module Functions
+## Functions
 ```@docs
 circumference
 diameter
