@@ -2,3 +2,6 @@ name = "Polymath"
 uuid = "17faa8b8-622d-400d-9fe8-1e507a5fe3e9"
 authors = ["Lloyd Dilley <ldilley@users.noreply.github.com>"]
 version = "0.1.0"
+
+[compat]
+julia = "1.5"
