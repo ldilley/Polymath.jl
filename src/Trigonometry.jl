@@ -24,33 +24,47 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-module Polymath
+module Trigonometry
 
-include("Geometry.jl")
+"""
+Constant representing the value of π (pi).
 
-using .Geometry: PI, Point, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
-                 area_rectangle, area_square, area_trapezoid, area_triangle, perimeter_rectangle,
-                 perimeter_square, edges, faces, vertices, has_euler_characteristic, distance_2d,
-                 distance_3d
+# Example
+```julia-repl
+julia> PI
+3.141592653589793
+```
+"""
+const PI = 3.141592653589793
 
-export PI, Point, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
-       area_rectangle, area_square, area_trapezoid, area_triangle, perimeter_rectangle,
-       perimeter_square, edges, faces, vertices, has_euler_characteristic, distance_2d,
-       distance_3d
+"""
+    degrees_to_radians(degrees)
+    dtor(degrees)
 
-include("Temperature.jl")
+Convert degrees to radians.
 
-using .Temperature: celsius_to_fahrenheit, ctof, celsius_to_kelvin, ctok, fahrenheit_to_celsius,
-                    ftoc, fahrenheit_to_kelvin, ftok, kelvin_to_celsius, ktoc, kelvin_to_fahrenheit,
-                    ktof
+# Example
+```julia-repl
+julia> dtor(286.479)
+5.000001787820835
+```
+"""
+degrees_to_radians(degrees) = PI / 180 * degrees
+const dtor = degrees_to_radians
 
-export celsius_to_fahrenheit, ctof, celsius_to_kelvin, ctok, fahrenheit_to_celsius, ftoc,
-       fahrenheit_to_kelvin, ftok, kelvin_to_celsius, ktoc, kelvin_to_fahrenheit, ktof
+"""
+    radians_to_degrees(radians)
+    rtod(radians)
 
-include("Trigonometry.jl")
+Convert radians to degrees.
 
-using .Trigonometry: PI, degrees_to_radians, dtor, radians_to_degrees, rtod
-
-export PI, degrees_to_radians, dtor, radians_to_degrees, rtod
+# Example
+```julia-repl
+julia> rtod(5)
+286.4788975654116
+```
+"""
+radians_to_degrees(radians) = radians * 180 / PI
+const rtod = radians_to_degrees
 
 end
