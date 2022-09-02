@@ -1,12 +1,5 @@
 # Geometry
 
-## Usage
-To use this module:
-```
-include("Geometry.jl")
-using .Geometry
-```
-
 ## Constants
 ```@docs
 PI

@@ -26,10 +26,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 module Trigonometry
 
-include("Geometry.jl")
-using .Geometry: PI
-
-export degrees_to_radians, dtor, radians_to_degrees, rtod
+using ..Geometry: PI
 
 """
     degrees_to_radians(degrees)

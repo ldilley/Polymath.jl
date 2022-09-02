@@ -31,14 +31,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 ## Usage
-To use Polymath and all of its modules:
 ```
 include("Polymath.jl")
 using .Polymath
-```
-
-To use a single module (such as `Geometry`):
-```
-include("Geometry.jl")
-using .Geometry
 ```

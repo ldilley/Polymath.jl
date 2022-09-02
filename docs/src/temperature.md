@@ -1,12 +1,5 @@
 # Temperature
 
-## Usage
-To use this module:
-```
-include("Temperature.jl")
-using .Temperature
-```
-
 ## Functions
 ```@docs
 celsius_to_fahrenheit
