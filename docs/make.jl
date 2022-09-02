@@ -12,5 +12,5 @@ makedocs(
 )
 
 deploydocs(
-  repo = "github.com/ldilley/polymath.git"
+  repo = "github.com/ldilley/Polymath.jl.git"
 )
