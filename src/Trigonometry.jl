@@ -26,16 +26,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 module Trigonometry
 
-"""
-Constant representing the value of π (pi).
+include("Geometry.jl")
+using .Geometry: PI
 
-# Example
-```julia-repl
-julia> PI
-3.141592653589793
-```
-"""
-const PI = 3.141592653589793
+export degrees_to_radians, dtor, radians_to_degrees, rtod
 
 """
     degrees_to_radians(degrees)

@@ -49,8 +49,8 @@ export celsius_to_fahrenheit, ctof, celsius_to_kelvin, ctok, fahrenheit_to_celsi
 
 include("Trigonometry.jl")
 
-using .Trigonometry: PI, degrees_to_radians, dtor, radians_to_degrees, rtod
+using .Trigonometry: degrees_to_radians, dtor, radians_to_degrees, rtod
 
-export PI, degrees_to_radians, dtor, radians_to_degrees, rtod
+export degrees_to_radians, dtor, radians_to_degrees, rtod
 
 end
