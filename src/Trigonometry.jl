@@ -32,7 +32,7 @@ using ..Geometry: PI
     degrees_to_radians(degrees)
     dtor(degrees)
 
-Convert degrees to radians.
+Convert degrees (°) to radians (rad).
 
 # Example
 ```julia-repl
@@ -47,7 +47,7 @@ const dtor = degrees_to_radians
     radians_to_degrees(radians)
     rtod(radians)
 
-Convert radians to degrees.
+Convert radians (rad) to degrees (°).
 
 # Example
 ```julia-repl

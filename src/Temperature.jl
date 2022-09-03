@@ -30,7 +30,7 @@ module Temperature
     celsius_to_fahrenheit(degrees_celsius)
     ctof(degrees_celsius)
 
-Convert degrees Celsius to degrees Fahrenheit.
+Convert degrees Celsius (°C) to degrees Fahrenheit (°F).
 
 # Example
 ```julia-repl
@@ -45,7 +45,7 @@ const ctof = celsius_to_fahrenheit
     celsius_to_kelvin(degrees_celsius)
     ctok(degrees_celsius)
 
-Convert degrees Celsius to kelvins.
+Convert degrees Celsius (°C) to kelvins (K).
 
 # Example
 ```julia-repl
@@ -60,7 +60,7 @@ const ctok = celsius_to_kelvin
     fahrenheit_to_celsius(degrees_fahrenheit)
     ftoc(degrees_fahrenheit)
 
-Convert degrees Fahrenheit to degrees Celsius.
+Convert degrees Fahrenheit (°F) to degrees Celsius (°C).
 
 # Example
 ```julia-repl
@@ -75,7 +75,7 @@ const ftoc = fahrenheit_to_celsius
     fahrenheit_to_kelvin(degrees_fahrenheit)
     ftok(degrees_fahrenheit)
 
-Convert degrees Fahrenheit to kelvins.
+Convert degrees Fahrenheit (°F) to kelvins (K).
 
 # Example
 ```julia-repl
@@ -90,7 +90,7 @@ const ftok = fahrenheit_to_kelvin
     kelvin_to_celsius(kelvins)
     ktoc(kelvins)
 
-Convert kelvins to degrees Celsius.
+Convert kelvins (K) to degrees Celsius (°C).
 
 # Example
 ```julia-repl
@@ -105,7 +105,7 @@ const ktoc = kelvin_to_celsius
     kelvin_to_fahrenheit(kelvins)
     ktof(kelvins)
 
-Convert kelvins to degrees Fahrenheit.
+Convert kelvins (K) to degrees Fahrenheit (°F).
 
 # Example
 ```julia-repl
