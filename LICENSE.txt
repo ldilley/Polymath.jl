@@ -1,5 +1,6 @@
 BSD 2-Clause License
 
+Polymath - A mathematics library (https://github.com/ldilley/Polymath.jl)
 Copyright (c) 2022 Lloyd Dilley
 All rights reserved.
 
