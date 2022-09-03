@@ -5,7 +5,7 @@
 Polymath is licensed under the terms of the BSD 2-Clause License.
 
 ```
-Polymath - A mathematics library
+Polymath - A mathematics library (https://github.com/ldilley/Polymath.jl)
 Copyright (c) 2022 Lloyd Dilley
 
 Redistribution and use in source and binary forms, with or without
