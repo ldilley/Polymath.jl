@@ -226,6 +226,7 @@ Calculate perimeter of a triangle given the length of the sides.
 julia> perimeter_triangle(10, 20, 30)
 60
 ```
+"""
 perimeter_triangle(side_a, side_b, side_c) = side_a + side_b + side_c
 
 """
