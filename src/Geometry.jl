@@ -272,6 +272,53 @@ false
 has_euler_characteristic(edges, faces, vertices) = vertices - edges + faces == 2
 
 """
+    pytheorem(leg_a, leg_b)
+
+Calculate (using the Pythagorean theorem) area of the square formed along the hypotenuse of a right
+triangle given the length of the legs.
+
+# Examples
+```julia-repl
+julia> pytheorem(3, 7)
+58
+
+julia> hypotenuse_length(3, 7) ^ 2
+58
+```
+"""
+pytheorem(leg_a, leg_b) = leg_a ^ 2 + leg_b ^ 2
+
+"""
+    hypotenuse_length(leg_a, leg_b)
+
+Calculate length of a hypotenuse given the length of the legs. The hypotenuse is the longest side of
+a right triangle and is opposite of the 90° angle.
+
+# Examples
+```julia-repl
+julia> hypotenuse_length(4, 7)
+8.06225774829855
+
+julia> sqrt(pytheorem(4, 7))
+8.06225774829855
+```
+"""
+hypotenuse_length(leg_a, leg_b) = sqrt(leg_a ^ 2 + leg_b ^ 2)
+
+"""
+    leg_length(leg, hypotenuse)
+
+Calculate length of a missing right triangle leg given the lengths of an existing leg and the hypotenuse.
+
+# Example
+```julia-repl
+julia> leg_length(4, 8.0623)
+7.000048663402277
+```
+"""
+leg_length(leg, hypotenuse) = sqrt(hypotenuse ^ 2 - leg ^2)
+
+"""
     distance_2d(x1, y1, x2, y2)
     distance_2d(p1, p2)
 

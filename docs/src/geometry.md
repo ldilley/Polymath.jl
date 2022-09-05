@@ -28,6 +28,9 @@ edges
 faces
 vertices
 has_euler_characteristic
+pytheorem
+hypotenuse_length
+leg_length
 distance_2d
 distance_3d
 ```

@@ -31,12 +31,12 @@ include("Geometry.jl")
 using .Geometry: PI, Point, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
                  area_rectangle, area_square, area_trapezoid, area_triangle, perimeter_rectangle,
                  perimeter_square, edges, faces, vertices, has_euler_characteristic, distance_2d,
-                 distance_3d
+                 distance_3d, pytheorem, hypotenuse_length, leg_length
 
 export PI, Point, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
        area_rectangle, area_square, area_trapezoid, area_triangle, perimeter_rectangle,
        perimeter_square, edges, faces, vertices, has_euler_characteristic, distance_2d,
-       distance_3d
+       distance_3d, pytheorem, hypotenuse_length, leg_length
 
 include("Temperature.jl")
 
