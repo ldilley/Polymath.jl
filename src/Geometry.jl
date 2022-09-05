@@ -217,6 +217,18 @@ julia> perimeter_square(25)
 perimeter_square(side_length) = side_length * 4
 
 """
+    perimeter_triangle(side_a, side_b, side_c)
+
+Calculate perimeter of a triangle given the length of the sides.
+
+# Example
+```julia-repl
+julia> perimeter_triangle(10, 20, 30)
+60
+```
+perimeter_triangle(side_a, side_b, side_c) = side_a + side_b + side_c
+
+"""
     edges(faces, vertices)
 
 Calculate edges of a convex polyhedron given the faces and vertices.

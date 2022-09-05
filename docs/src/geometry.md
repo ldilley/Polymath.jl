@@ -24,6 +24,7 @@ area_trapezoid
 area_triangle
 perimeter_rectangle
 perimeter_square
+perimeter_triangle
 edges
 faces
 vertices
