@@ -6,6 +6,7 @@ makedocs(
   sitename = "Polymath",
   pages = [
     "Home" => "index.md",
+    "Chemistry" => "chemistry.md",
     "Geometry" => "geometry.md",
     "Temperature" => "temperature.md",
     "Trigonometry" => "trigonometry.md"
