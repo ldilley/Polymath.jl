@@ -26,6 +26,12 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 module Polymath
 
+include("Chemistry.jl")
+
+using .Chemistry: AVOGADRO
+
+export AVOGADRO
+
 include("Geometry.jl")
 
 using .Geometry: PI, Point, circumference, diameter, radius, area_circle, area_cube, area_ellipse,
