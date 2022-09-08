@@ -37,4 +37,30 @@ julia> AVOGADRO
 """
 const AVOGADRO = 6.02214076e23
 
+"""
+    atoms_to_moles(atoms)
+
+Calculate number of moles given the quantity of atoms or molecules.
+
+# Example
+```julia-repl
+julia> 3.613284456e24 / AVOGADRO
+6.0
+```
+"""
+atoms_to_moles(atoms) = atoms / AVOGADRO
+
+"""
+    moles_to_atoms(moles)
+
+Calculate number of atoms or molecules given the quantity of moles (mol).
+
+# Example
+```julia-repl
+julia> 6 * AVOGADRO
+3.613284456e24
+```
+"""
+moles_to_atoms(moles) = moles * AVOGADRO
+
 end

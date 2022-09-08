@@ -28,9 +28,9 @@ module Polymath
 
 include("Chemistry.jl")
 
-using .Chemistry: AVOGADRO
+using .Chemistry: AVOGADRO, atoms_to_moles, moles_to_atoms
 
-export AVOGADRO
+export AVOGADRO, atoms_to_moles, moles_to_atoms
 
 include("Geometry.jl")
 
