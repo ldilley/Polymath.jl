@@ -8,6 +8,7 @@ makedocs(
     "Home" => "index.md",
     "Chemistry" => "chemistry.md",
     "Geometry" => "geometry.md",
+    "Physics" => "physics.md",
     "Temperature" => "temperature.md",
     "Trigonometry" => "trigonometry.md"
   ]

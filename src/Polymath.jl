@@ -44,6 +44,12 @@ export PI, Point, circumference, diameter, radius, area_circle, area_cube, area_
        perimeter_square, perimeter_triangle, edges, faces, vertices, has_euler_characteristic,
        distance_2d, distance_3d, pytheorem, hypotenuse_length, leg_length
 
+include("Physics.jl")
+
+using .Physics: density, mass, volume
+
+export density, mass, volume
+
 include("Temperature.jl")
 
 using .Temperature: celsius_to_fahrenheit, ctof, celsius_to_kelvin, ctok, fahrenheit_to_celsius,
