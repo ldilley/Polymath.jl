@@ -65,4 +65,17 @@ julia> volume(1.375, 55)
 """
 volume(density, mass) = mass / density
 
+"""
+    average_speed(distance, time)
+
+Calculate average speed given distance and time.
+
+# Example
+```julia-repl
+julia> average_speed(60, 2)
+30.0
+```
+"""
+average_speed(distance, time) = distance / time
+
 end
