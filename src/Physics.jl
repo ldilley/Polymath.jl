@@ -96,6 +96,7 @@ speed(distance, time) = distance / time
 
 Calculate time given distance and speed.
 
+# Example
 ```julia-repl
 julia> time(60, 30)
 2.0

@@ -7,5 +7,5 @@ mass
 volume
 distance
 speed
-time
+Polymath.Physics.time
 ```
