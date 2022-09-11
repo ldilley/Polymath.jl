@@ -92,7 +92,7 @@ julia> speed(60, 2)
 speed(distance, time) = distance / time
 
 """
-   time(distance, speed)
+    time(distance, speed)
 
 Calculate time given distance and speed.
 
