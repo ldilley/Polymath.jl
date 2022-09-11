@@ -66,16 +66,41 @@ julia> volume(1.375, 55)
 volume(density, mass) = mass / density
 
 """
-    average_speed(distance, time)
+    distance(speed, time)
 
-Calculate average speed given distance and time.
+Calculate distance given speed and time.
 
 # Example
 ```julia-repl
-julia> average_speed(60, 2)
+julia> distance(30, 2)
+60
+```
+"""
+distance(speed, time) = speed * time
+
+"""
+    speed(distance, time)
+
+Calculate speed given distance and time.
+
+# Example
+```julia-repl
+julia> speed(60, 2)
 30.0
 ```
 """
-average_speed(distance, time) = distance / time
+speed(distance, time) = distance / time
+
+"""
+   time(distance, speed)
+
+Calculate time given distance and speed.
+
+```julia-repl
+julia> time(60, 30)
+2.0
+```
+"""
+time(distance, speed) = distance / speed
 
 end

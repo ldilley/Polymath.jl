@@ -5,5 +5,7 @@
 density
 mass
 volume
-average_speed
+distance
+speed
+time
 ```

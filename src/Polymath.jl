@@ -46,9 +46,9 @@ export PI, Point, circumference, diameter, radius, area_circle, area_cube, area_
 
 include("Physics.jl")
 
-using .Physics: density, mass, volume, average_speed
+using .Physics: density, mass, volume, distance, speed, time
 
-export density, mass, volume, average_speed
+export density, mass, volume, distance, speed, time
 
 include("Temperature.jl")
 
