@@ -68,7 +68,7 @@ volume(density, mass) = mass / density
 """
     distance(speed, time)
 
-Calculate distance given speed and time.
+Calculate distance given the speed and time.
 
 # Example
 ```julia-repl
@@ -81,7 +81,7 @@ distance(speed, time) = speed * time
 """
     speed(distance, time)
 
-Calculate speed given distance and time.
+Calculate speed given the distance and time.
 
 # Example
 ```julia-repl
@@ -94,7 +94,7 @@ speed(distance, time) = distance / time
 """
     time(distance, speed)
 
-Calculate time given distance and speed.
+Calculate time given the distance and speed.
 
 # Example
 ```julia-repl
@@ -103,5 +103,18 @@ julia> time(60, 30)
 ```
 """
 time(distance, speed) = distance / speed
+
+"""
+    velocity(displacement, time)
+
+Calculate velocity given the displacement and time.
+
+# Example
+```julia-repl
+julia> velocity(5760.72, 7)
+822.96
+```
+"""
+velocity(displacement, time) = displacement / time
 
 end

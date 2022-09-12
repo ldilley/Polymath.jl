@@ -8,4 +8,5 @@ volume
 distance
 speed
 Polymath.Physics.time
+velocity
 ```
